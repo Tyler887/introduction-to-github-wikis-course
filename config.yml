@@ -1,0 +1,18 @@
+title: Introduction to GitHub Wikis
+description: >-
+  Did you know that you can host a wiki about your software on GitHub? Try out
+  GitHub Wikis, an easy way to make wikis for your software.
+template:
+  repo: introduction-to-github-wikis-template
+  name: introduction-to-github-wikis
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
